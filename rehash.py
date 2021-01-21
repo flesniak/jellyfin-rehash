@@ -304,7 +304,7 @@ if __name__ == '__main__':
     parser.add_argument('-v', '--verbose', action='store_true', help='Print replacements')
     parser.add_argument('-q', '--quiet', action='store_true', help='Print warnings only')
     parser.add_argument('-I', '--no-move-images', dest='move_images', action='store_false', help='Neither change image paths in db nor move images to new location')
-    parser.add_argument('-V', '--no-vacuum', dest='vacuum', action='store_false', help='Don't vacuum database after operation')
+    parser.add_argument('-V', '--no-vacuum', dest='vacuum', action='store_false', help="Don't vacuum database after operation")
     parser.add_argument('-C', '--no-case-sensitive', dest='case_sensitive', action='store_false', help='Case insensitive hashes (current jellyfin versions default to case sensitive)')
     parser.add_argument('media_path', help='(new) media path to migrate to / rehash against')
     args = parser.parse_args()
